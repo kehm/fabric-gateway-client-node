@@ -1,0 +1,39 @@
+{
+  "name": "fabric-gateway-client-node",
+  "version": "1.0.0",
+  "description": "A simple API that interacts with the Hyperledger Fabric blockchain using the Fabric SDK for Node.js",
+  "main": "server.ts",
+  "scripts": {
+    "start": "node src/server",
+    "dev": "ts-node-dev src/server",
+    "build": "tsc -p tsconfig.json",
+    "docker": "docker build -f Dockerfile -t fabric-gateway-client-node:latest ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kehm/fabric-gateway-client-node.git"
+  },
+  "author": "kehm",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.2",
+    "@typescript-eslint/eslint-plugin": "^5.8.0",
+    "@typescript-eslint/parser": "^5.8.0",
+    "eslint": "^8.5.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.12.5",
+    "@hyperledger/fabric-gateway": "^1.7.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.0.0"
+  }
+}
